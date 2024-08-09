@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "FAQ"
-permalink: /FAQ
+permalink: /FAQ/
 ---
 
 Heavy Network currently serves the AUSTIN TEXAS area
