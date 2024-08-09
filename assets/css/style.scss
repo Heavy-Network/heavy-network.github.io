@@ -2,3 +2,123 @@
 ---
 
 @import 'jekyll-theme-hacker';
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+/* Logo image */
+#site-title-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Space between image and description */
+}
+
+/* Description text */
+header h2 {
+  margin: 0;
+  color: #666;
+}
+
+/* Download buttons */
+#downloads {
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  #site-title-image {
+    max-width: 100%; /* Adjust as needed */
+  }
+
+  header h2 {
+    margin-left: 5px; /* Space between image and text */
+  }
+
+  #downloads {
+    margin-top: 0;
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  filter: invert(1); /* Makes the icons white for dark backgrounds */
+}
+
+.footer-info p {
+  margin: 20px 0 0 0;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-nav {
+    order: 1;
+  }
+
+  .footer-social {
+    order: 2;
+  }
+
+  .footer-info {
+    order: 3;
+  }
+}
